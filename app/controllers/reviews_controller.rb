@@ -12,11 +12,11 @@ class ReviewsController < ApplicationController
     if @review.save
       redirect_to restaurant_path(@restaurant)
     else
-      render 'new.html.erb'
+      render "new"
     end
   end
   private
   def review_params
-    params.require(:review).permit(:rating, :content )
+    params.require(:review).permit(:rating, :content)
   end
 end
