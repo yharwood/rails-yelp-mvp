@@ -1,0 +1,9 @@
+<div class="container mt-5">
+  <h1><%= @restaurant.name %></h1>
+  <div class="card">
+    <p><%= @restaurant.category %></p>
+    <p><%= @restaurant.address %></p>
+    <p><%= @restaurant.phone_number %></p>
+  </div>
+  <%= link_to "Back to the list", :restaurants %>
+</div>
